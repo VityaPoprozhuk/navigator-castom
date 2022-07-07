@@ -1,0 +1,207 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap);
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Noto Sans JP", sans-serif;
+}
+body {
+  margin: 0;
+}
+input,
+input:active,
+input:focus {
+  border: none;
+  outline: none;
+}
+.Country_container__zUKDR {
+  position: relative;
+  top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Country_loading__1CUwC {
+  width: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 80px;
+  border-radius: 50%;
+  border-left: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-color: #000 transparent transparent #000;
+  border-style: solid;
+  border-width: 10px;
+  -webkit-animation: Country_spin__N3e4w 0.5s linear infinite;
+  animation: Country_spin__N3e4w 0.5s linear infinite;
+}
+.Country_loading__1CUwC:after {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+@-webkit-keyframes Country_spin__N3e4w {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}
+@keyframes Country_spin__N3e4w {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}
+@media screen and (max-width: 400px) {
+  .Country_container__zUKDR {
+    top: 50px;
+  }
+  .Country_loading__1CUwC {
+    width: 30px;
+    height: 30px;
+    border-left: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-color: #000 transparent transparent #000;
+    border-style: solid;
+    border-width: 5px;
+    -webkit-animation: Country_spin__N3e4w 0.5s linear infinite;
+    animation: Country_spin__N3e4w 0.5s linear infinite;
+  }
+}
+li {
+  all: unset;
+}
+.CountryCard_card__13OcJ {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+.CountryCard_name__2Zl6Q {
+  text-align: center;
+  font-size: 15px;
+}
+img {
+  width: 110px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.CountryCard_info__1zHSb {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 400px) {
+  .CountryCard_card__13OcJ {
+    min-height: 150px;
+    width: 100px;
+  }
+  img {
+    width: 75px;
+    height: 50px;
+    margin-bottom: 5px;
+  }
+  .CountryCard_card__13OcJ span {
+    font-size: 13px;
+  }
+}
+.CountryList_list__3t57w {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+ul {
+  padding: 0;
+  display: flex;
+}
+li,
+ul {
+  grid-gap: 10px;
+  gap: 10px;
+}
+li {
+  box-shadow: 2px 2px 5px #7777a3, -2px -2px 5px rgba(0, 0, 0, 0.25);
+}
+.Input_input__RxGlr {
+  margin-left: 20px;
+  border-radius: 15px;
+  width: 200px;
+  font-size: 30px;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 5px #7777a3, -2px -2px 5px #7777a3;
+}
+.Input_input__RxGlr:focus {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+.Input_label__3hrVD {
+  font-size: 35px;
+}
+.Input_form__2Nn1B {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #7777a3, -2px -2px 5px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 200px;
+}
+.Input_button__wI6CT {
+  font-size: 30px;
+  margin-top: 20px;
+  height: 60px;
+  transition: 1s;
+  width: 60%;
+  border-radius: 20px;
+  background: red;
+  border: none;
+}
+.Input_button__wI6CT:hover {
+  background: #00f;
+  transition: all 1s;
+}
+.Input_span__28E27 {
+  font-size: 18px;
+  color: red;
+  margin-top: 5px;
+}
+@media screen and (max-width: 400px) {
+  .Input_input__RxGlr {
+    margin-left: 10px;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 25px;
+    padding: 5px 10px;
+  }
+  .Input_label__3hrVD {
+    font-size: 25px;
+  }
+  .Input_form__2Nn1B {
+    width: 350px;
+    height: 200px;
+  }
+  .Input_button__wI6CT {
+    font-size: 20px;
+    height: 30%;
+  }
+}
+/*# sourceMappingURL=main.ea29f201.chunk.css.map */
